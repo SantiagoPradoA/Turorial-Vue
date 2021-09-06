@@ -57,7 +57,7 @@
 </script>
 
 <style scoped>
-  form {
-    margin-bottom: 2rem;
-  }
+    form {
+        margin-bottom: 2rem;
+    }
 </style>
