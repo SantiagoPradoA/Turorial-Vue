@@ -2,7 +2,7 @@
   <div id="app" class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1>Personas</h1>
+        <h1 class="">Personas</h1>
       </div>
     </div>
     <div class="row">

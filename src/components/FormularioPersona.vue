@@ -11,7 +11,7 @@
                         ref="nombre"
                         v-model="persona.nombre"
                         type="text"
-                        class="form-control"
+                        class="form-control bg-secondary text-white"
                         :class="{ 'is-invalid': procesando && nombreInvalido }"
                         @focus="resetEstado"
                         @keypress="resetEstado"/>
@@ -23,7 +23,7 @@
                         <input
                             v-model="persona.apellido"
                             type="text"
-                            class="form-control"
+                            class="form-control bg-secondary text-white"
                             :class="{ 'is-invalid': procesando && apellidoInvalido }"
                             @focus="resetEstado"/>
                     </div>
@@ -34,7 +34,7 @@
                         <input
                             v-model="persona.email"
                             type="email"
-                            class="form-control"
+                            class="form-control bg-secondary text-white"
                             :class="{ 'is-invalid': procesando && emailInvalido }"
                             @focus="resetEstado"/>
                     </div>
