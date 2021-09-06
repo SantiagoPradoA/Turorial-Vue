@@ -13,6 +13,9 @@
               <td>{{ persona.nombre}}</td>
               <td>{{ persona.apellido }}</td>
               <td>{{ persona.email}}</td>
+              <td>
+                  <button class="btn btn-danger"> 🗑️🗑️🗑️Eliminar</button>
+              </td>
           </tr>
       </tbody>
     </table>
