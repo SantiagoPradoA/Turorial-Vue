@@ -44,7 +44,7 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <br>
-                        <button class="btn btn-primary">Añadir persona</button>
+                        <input type="submit" class="btn btn-outline-success" value="Añadir persona">
                     </div>
                 </div>
             </div>
