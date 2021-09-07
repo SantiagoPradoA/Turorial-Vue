@@ -53,14 +53,14 @@
           <td v-else>
               <div>
                   <input class="btn btn-outline-danger"
-                  @click="$emit('delete-persona', persona.id)" value="🗑️Eliminar🗑️"/>
+                  @click="$emit('delete-persona', persona.id)" value="🗑️Eliminar🗑️">
               </div>
               <br>
               <div>
                   <input type="submit"
                   class="btn btn-outline-warning"
                   value="✏️editar✏️"
-                  @click="editarPersona(persona)"/>
+                  @click="editarPersona(persona)">
               </div>
           </td>
         </tr>
