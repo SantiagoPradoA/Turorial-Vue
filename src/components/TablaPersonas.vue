@@ -18,26 +18,22 @@
             <input
               type="text"
               class="form-control bg-dark text-white"
-              v-model="persona.nombre"
-            />
+              v-model="persona.nombre">
           </td>
           <td v-else>{{ persona.nombre }}</td>
           <td v-if="editando == persona.id">
             <input
               type="text"
               class="form-control bg-dark text-white"
-              v-model="persona.apellido"
-            />
+              v-model="persona.apellido">
           </td>
           <td v-else>{{ persona.apellido }}</td>
           <td v-if="editando == persona.id">
             <input
               type="email"
               class="form-control bg-dark text-white"
-              v-model="persona.email"
-            />
+              v-model="persona.email">
           </td>
-
           <td v-else>{{ persona.email }}</td>
           <td v-if="editando == persona.id">
               <div>
