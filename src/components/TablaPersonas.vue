@@ -40,28 +40,28 @@
 
           <td v-else>{{ persona.email }}</td>
           <td v-if="editando == persona.id">
-            <button class="btn btn-outline-success" @click="guardarPersona(persona)">
-              💾Guardar💾
-            </button>
-            <button
-              class="btn btn-outline-secondary ml-2"
-              @click="cancelarEdicion(persona)">
-              ❌Cancelar❌
-            </button>
+              <div>
+                  <input type="submit" class="btn btn-outline-success"
+                  @click="guardarPersona(persona)" value="💾Guardar💾">
+              </div>
+              <br>
+              <div>
+                  <input type="submit" class="btn btn-outline-secondary ml-2"
+                  @click="cancelarEdicion(persona)" value="❌Cancelar❌">
+              </div>
           </td>
           <td v-else>
-            <button
-              class="btn btn-outline-danger"
-              @click="$emit('delete-persona', persona.id)"
-            >
-              🗑️Eliminar🗑️
-            </button>
-            <input
-              type="submit"
-              class="btn btn-outline-warning"
-              value="✏️editar✏️"
-              @click="editarPersona(persona)"
-            />
+              <div>
+                  <input class="btn btn-outline-danger"
+                  @click="$emit('delete-persona', persona.id)" value="🗑️Eliminar🗑️"/>
+              </div>
+              <br>
+              <div>
+                  <input type="submit"
+                  class="btn btn-outline-warning"
+                  value="✏️editar✏️"
+                  @click="editarPersona(persona)"/>
+              </div>
           </td>
         </tr>
       </tbody>
