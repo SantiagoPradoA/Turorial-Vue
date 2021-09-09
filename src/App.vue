@@ -1,8 +1,11 @@
 <template>
+<body class="p-3 mb-2 bg-secondary bg-gradient text-white" style="--bs-bg-opacity: .5;">
   <div id="app" class="container">
     <div class="row">
-      <div class="col-md-12">
-        <h1 class="">Personas</h1>
+      <div class="col-md-20">
+        <header class="bg-gradient border border-5 col-md-20 dropdown-header">
+          <h1>PERSONAS</h1>
+        </header>
       </div>
     </div>
     <div class="row">
@@ -14,6 +17,7 @@
       </div>
     </div>
   </div>
+</body>
 </template>
 <script>
   import TablaPersonas from '@/components/TablaPersonas.vue'
@@ -71,8 +75,22 @@
 </script>
 
 <style>
+
   button {
     background: #009435;
     border: 1px solid #009435;
   }
+
+  header{
+    background-color: rgb(66, 252, 9);
+    border-radius: 15px;
+    color: black;
+    background-image: var(--bs-gradient);
+  }
+
+  .bg-secondary {
+  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+  background-image: var(--bs-gradient);
+  }
+
 </style>

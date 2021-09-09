@@ -1,7 +1,7 @@
 <template>
   <div id="formulario-persona">
     <br>
-    <form @submit.prevent="enviarFormulario">
+    <form @submit.prevent="enviarFormulario" style="--bs-bg-opacity: .5;">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -44,14 +44,14 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <br>
-                        <input type="submit" class="btn btn-outline-success" value="Añadir persona">
+                        <input type="submit" class="btn btn-outline col-md-5 fw-bold" value="Añadir persona">
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-4">
                     <br>
                     <div v-if="error && procesando" class="alert alert-danger" role="alert">
                         Debes rellenar todos los campos!
@@ -127,7 +127,18 @@
 </script>
 
 <style scoped>
+
     form {
         margin-bottom: 2rem;
+        background-image: var(--bs-gradient);
+        --bs-bg-opacity: 1;
+        background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+        border-radius: 15px;
     }
+    .btn{
+        background-color: rgb(66, 252, 9);
+        color: antiquewhite;
+        background-image: var(--bs-gradient);
+    }
+
 </style>
